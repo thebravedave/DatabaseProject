@@ -10,13 +10,6 @@ namespace DatabaseProject.Database
     {
         SQLiteConnection Database;
 
-
-
-        public StudentDataAccess()
-        {
-
-        }
-
         void Init()
         {
             if (Database is not null)
@@ -38,7 +31,6 @@ namespace DatabaseProject.Database
         {
             Init();
             return Database.Get<Student>(id);
-
 
         }
         public void InsertStudentWithChildren(Student student)

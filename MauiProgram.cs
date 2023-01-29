@@ -27,14 +27,17 @@ public static class MauiProgram
 
 
 		//Add Data Access Object Injection
-		builder.Services.AddSingleton<IStudentDataAccess, StudentDataAccess>();
-	
+		builder.Services.AddSingleton<IStudentDataAccess, StudentDataAccess>();	
 		builder.Services.AddSingleton<IClassDataAccess, ClassDataAccess>();
 
 
 #if DEBUG
+
+
 		builder.Logging.AddDebug();
+
 #endif
+
 
 		return builder.Build();
 	}

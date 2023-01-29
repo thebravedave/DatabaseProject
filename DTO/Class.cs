@@ -4,8 +4,6 @@ using SQLiteNetExtensions.Attributes;
 
 namespace DatabaseProject.DTO;
 
-
-
 [Table("Class")]
 public class Class
 {
@@ -21,6 +19,5 @@ public class Class
 
 	[ManyToOne]
 	public Student Student { get; set; }
-
 }
 
